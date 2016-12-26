@@ -22,7 +22,7 @@ const uint8_t PROGMEM anim[] = {
   // in 1/100ths of a second (e.g. 100 = 1 sec, 25 = 1/4 sec,
   // etc.).  Range is 0 (no delay) to 255 (2.55 seconds).  If
   // longer delays are needed, make duplicate frames.
-  12, // 0.12 seconds
+  25, // 0.25 seconds
 
   B10000001,
   B10000001,
@@ -32,7 +32,7 @@ const uint8_t PROGMEM anim[] = {
   B10000001,
   B10000001,
   B10000001,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
 
   B00011000, // This is the second frame for "HAILEY<3<3"
@@ -43,7 +43,7 @@ const uint8_t PROGMEM anim[] = {
   B10000001,
   B10000001,
   B10000001,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B11111111, // This is the third frame for "HAILEY<3<3"
   B00011000,
@@ -53,7 +53,7 @@ const uint8_t PROGMEM anim[] = {
   B00011000,
   B00011000,
   B11111111,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B10000000, // This is the forth frame for "HAILEY<3<3"
   B10000000,
@@ -63,7 +63,7 @@ const uint8_t PROGMEM anim[] = {
   B10000000,
   B10000000,
   B11111111,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B11111111, // This is the forth frame for "HAILEY<3<3"
   B10000000,
@@ -73,7 +73,7 @@ const uint8_t PROGMEM anim[] = {
   B10000000,
   B10000000,
   B11111111,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B10000001, // This is the sixth frame for "HAILEY<3<3"
   B01000010,
@@ -83,7 +83,7 @@ const uint8_t PROGMEM anim[] = {
   B00011000,
   B00011000,
   B00011000,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B00000000, // This is the eighth frame for "HAILEY<3<3"
   B01100110,
@@ -93,75 +93,84 @@ const uint8_t PROGMEM anim[] = {
   B00111100,
   B00011000,
   B00000000,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
-  B00111100, // First frame for glasses emoji
+  B00111100, // First frame for wink emoji
   B01000010,
-  B11111111,
-  B11100111,
-  B11000011,
-  B10111101,
-  B01000010,
-  B00111100,
-  25,
-
-  B00111100, // Second frame for glasses emoji
-  B01000010,
-  B11111111,
-  B11100111,
-  B11000011,
-  B10111101,
+  B10100101,
+  B10100101,
+  B10000001,
+  B10100101,
   B01011010,
   B00111100,
   25,
 
-  // Frames 3 & 4 for smile emoji are duplicates of frames 1 & 2
-  B00111100, B01000010, B11111111, B11100111, B11000011, B10111101, B01000010, B00111100, 25,
-  B00111100, B01000010, B11111111, B11100111, B11000011, B10111101, B01011010, B00111100, 25,
-
-  B01100110, // First frame for hearts emoji
-  B01111110,
+  B00111100, // Second frame for wink emoji
+  B01000010,
+  B10000101,
+  B11110101,
+  B10000001,
+  B10100101,
+  B01011010,
   B00111100,
-  B00011000,
-  B11001100,
-  B11111100,
-  B01111000,
-  B00110000,
+  25,
+
+  // Frames 3 & 4 for wink emoji are duplicates of frames 1 & 2
+  B00111100, B01000010, B10100101, B10100101, B10000001, B10100101, B01011010, B00111100, 25,
+  B00111100, B01000010, B10000101, B11110101, B10000001, B10100101, B01011010, B00111100, 25,
+
+  B00000000, // First frame of beating hearts emoji
+  B00000000,
+  B00000000,
+  B01101100,
+  B00111000,
+  B00010000,
+  B00000000,
+  B00000000,
   12, // ~1/8 second delay
 
-  B11001100, // Second frame for hearts emoji
-  B11111100,
-  B01111000,
-  B00110000,
+  B00000000, // Second frame of beating hearts emoji
+  B00000000,
   B01100110,
   B01111110,
   B00111100,
   B00011000,
+  B00000000,
+  B00000000,
   12, // ~1/8 second delay
 
-  B01100110, // Third frame for hearts emoji
-  B01111110,
-  B00111100,
-  B00011000,
-  B00110011,
-  B00111111,
-  B00011110,
-  B00001100,
-  12, // ~1/8 second delay
-
-  B00110011, // Forth frame for hearts emoji
-  B00111111,
-  B00011110,
-  B00001100,
+  B00000000, // Third frame of beating hearts emoji
   B01100110,
+  B11111111,
+  B11111111,
+  B01111110,
+  B00111100,
+  B00011000,
+  B00000000,
+  12, // ~1/8 second delay
+
+  B01100110, // Forth frame of beating hearts emoji
+  B11111111,
+  B11111111,
+  B11111111,
+  B01111110,
+  B00111100,
+  B00011000,
+  B00000000,
+  12, // ~1/8 second delay
+
+  B00000000,
+  B01100110, // Fifth frame of beating hearts emoji
+  B11111111,
+  B11111111,
+  B11111111,
   B01111110,
   B00111100,
   B00011000,
   12, // ~1/8 second delay
 
-  // Frames 5-8 are duplicates of 1-4, lines merged for brevity
-  B01100110, B01111110, B00111100, B00011000, B11001100, B11111100, B01111000, B00110000, 12,
-  B11001100, B11111100, B01111000, B00110000, B01100110, B01111110, B00111100, B00011000, 12,
-  B01100110, B01111110, B00111100, B00011000, B00110011, B00111111, B00011110, B00001100, 12,
-  B00110011, B00111111, B00011110, B00001100, B01100110, B01111110, B00111100, B00011000, 12,
+  // Frames 5-8 are duplicates of 3, 2, 1 lines merged for brevity
+  B00000000, B01100110, B11111111, B11111111, B01111110, B00111100, B00011000, B00000000, 12,
+  B00000000, B00000000, B01100110, B01111110, B00111100, B00011000, B00000000, B00000000, 12,
+  B00000000, B00000000, B00000000, B01101100, B00111000, B00010000, B00000000, B00000000, 12,
 };
