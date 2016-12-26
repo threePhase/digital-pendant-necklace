@@ -22,7 +22,7 @@ const uint8_t PROGMEM anim[] = {
   // in 1/100ths of a second (e.g. 100 = 1 sec, 25 = 1/4 sec,
   // etc.).  Range is 0 (no delay) to 255 (2.55 seconds).  If
   // longer delays are needed, make duplicate frames.
-  12, // 0.12 seconds
+  25, // 0.25 seconds
 
   B00011000, // This is the second frame for "KATELYN<3"
   B00100100,
@@ -32,7 +32,7 @@ const uint8_t PROGMEM anim[] = {
   B10000001,
   B10000001,
   B10000001,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B11111111, // This is the third frame for "KATELYN<3"
   B00011000,
@@ -42,7 +42,7 @@ const uint8_t PROGMEM anim[] = {
   B00011000,
   B00011000,
   B00011000,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B11111111, // This is the forth frame for "KATELYN<3"
   B10000000,
@@ -52,7 +52,7 @@ const uint8_t PROGMEM anim[] = {
   B10000000,
   B10000000,
   B11111111,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B10000000, // This is the fifth frame for "KATELYN<3"
   B10000000,
@@ -62,7 +62,7 @@ const uint8_t PROGMEM anim[] = {
   B10000000,
   B10000000,
   B11111111,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B10000001, // This is the sixth frame for "KATELYN<3"
   B01000010,
@@ -72,7 +72,7 @@ const uint8_t PROGMEM anim[] = {
   B00011000,
   B00011000,
   B00011000,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B10000001, // This is the seventh frame for "KATELYN<3"
   B11000001,
@@ -82,7 +82,7 @@ const uint8_t PROGMEM anim[] = {
   B10000101,
   B10000011,
   B10000001,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B00000000, // This is the eighth frame for "KATELYN<3"
   B01100110,
@@ -92,7 +92,7 @@ const uint8_t PROGMEM anim[] = {
   B00111100,
   B00011000,
   B00000000,
-  12, // 0.12 second delay
+  25, // 0.25 second delay
 
   B00111100, // First frame for glasses emoji
   B01000010,
@@ -118,49 +118,83 @@ const uint8_t PROGMEM anim[] = {
   B00111100, B01000010, B11111111, B11100111, B11000011, B10111101, B01000010, B00111100, 25,
   B00111100, B01000010, B11111111, B11100111, B11000011, B10111101, B01011010, B00111100, 25,
 
-  B01100110, // First frame for hearts emoji
-  B01111110,
-  B00111100,
-  B00011000,
-  B11001100,
-  B11111100,
-  B01111000,
-  B00110000,
+  B00000000, // First frame for floating heart emoji
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
   12, // ~1/8 second delay
 
-  B11001100, // Second frame for hearts emoji
-  B11111100,
-  B01111000,
-  B00110000,
+  B00000000, // Second frame for floating heart emoji
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
   B01100110,
-  B01111110,
-  B00111100,
-  B00011000,
+  B11111111,
   12, // ~1/8 second delay
 
-  B01100110, // Third frame for hearts emoji
-  B01111110,
-  B00111100,
-  B00011000,
-  B00110011,
-  B00111111,
-  B00011110,
-  B00001100,
-  12, // ~1/8 second delay
-
-  B00110011, // Forth frame for hearts emoji
-  B00111111,
-  B00011110,
-  B00001100,
+  B00000000, // Third frame for floating heart emoji
+  B00000000,
+  B00000000,
+  B00000000,
   B01100110,
+  B11111111,
+  B11111111,
+  B01111110,
+  12, // ~1/8 second delay
+
+  B00000000, // Forth frame for floating heart emoji
+  B00000000,
+  B01100110,
+  B11111111,
+  B11111111,
   B01111110,
   B00111100,
   B00011000,
   12, // ~1/8 second delay
 
-  // Frames 5-8 are duplicates of 1-4, lines merged for brevity
-  B01100110, B01111110, B00111100, B00011000, B11001100, B11111100, B01111000, B00110000, 12,
-  B11001100, B11111100, B01111000, B00110000, B01100110, B01111110, B00111100, B00011000, 12,
-  B01100110, B01111110, B00111100, B00011000, B00110011, B00111111, B00011110, B00001100, 12,
-  B00110011, B00111111, B00011110, B00001100, B01100110, B01111110, B00111100, B00011000, 12,
+  B01100110, // Fifth frame for floating heart emoji
+  B11111111,
+  B11111111,
+  B01111110,
+  B00111100,
+  B00011000,
+  B00000000,
+  B00000000,
+  12, // ~1/8 second delay
+
+  B11111111, // Sixth frame for floating heart emoji
+  B01111110,
+  B00111100,
+  B00011000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  12, // ~1/8 second delay
+
+  B00111100, // Seventh frame for floating heart emoji
+  B00011000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  12, // ~1/8 second delay
+
+  B00000000, // Eighth frame for floating heart emoji
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  12, // ~1/8 second delay
 };
